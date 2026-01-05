@@ -1,2 +1,2 @@
-# Python-Reflex
-Collection of mini projects and experiments built with Reflex (Python).
+# Python-Solara
+Collection of mini projects and experiments built with Solara (Python).
