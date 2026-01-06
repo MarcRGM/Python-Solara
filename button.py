@@ -13,4 +13,14 @@ def Page():
         clicks.value += 1
         print("Clicks", clicks)
 
-    solara.Button(Label=f"Clicked: {clicks}", on_click=increment, color=color)
+    def reset():
+        clicks.value = 0
+        print("Clicks have been reset")
+
+    with solara.VBox():
+        solara.Text(f"Clicks: {clicks.value}")
+        with solara.HBox():
+            solara.Button(Label="Increment", on_click=increment, color=color)
+            solara.Button(Label="Reset", on_click=reset, color="gray")
+
+    
