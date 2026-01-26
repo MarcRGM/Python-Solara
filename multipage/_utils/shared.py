@@ -1,5 +1,7 @@
 import solara
 
+# Folder has _ to let solara treat it as private and to remove it from the navigation tab
+
 # some app state that outlives a single page
 app_state = solara.reactive(0)
 

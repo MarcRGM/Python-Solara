@@ -1,6 +1,6 @@
 import solara
 
-from multipage.shared import SharedComponent
+from multipage._utils.shared import SharedComponent
 
 
 @solara.component
